@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hỗ Trợ - LapNest</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/f2a0c15a9d.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img
+          width="150px"
+          height="70px"
+          src="la grasa brand V2.png"
+          alt="lapnest logo"
+        />
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Trang Chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">Về Chúng Tôi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Đăng Xuất</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admindashboard.html">Trang chủ Admin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="support.html">Hỗ Trợ</a>
+            </li>
+            <li class="nav-item"><a class="nav-link active" href="shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Support Form -->
+    <div class="support-form">
+      <h2 class="mb-4 text-center">Liên Hệ Hỗ Trợ</h2>
+      <form id="supportForm">
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Họ và Tên</label>
+          <input
+            type="text"
+            class="form-control"
+            id="fullName"
+            placeholder="Nhập họ tên của bạn"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="emailAddress" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="emailAddress"
+            placeholder="Nhập email"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="phoneNumber" class="form-label">Số điện thoại</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phoneNumber"
+            placeholder="Nhập số điện thoại"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Nội dung yêu cầu</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="5"
+            placeholder="Nhập nội dung cần hỗ trợ"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Gửi Yêu Cầu</button>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 LapNest. All rights reserved.</p>
+      <p>
+        <a href="mailto:contact@lapnest.com">contact@lapnest.com</a>
+      </p>
+    </footer>
+
+    <style>
+      .navbar {
+        background-color: #333 !important;
+      }
+
+      .navbar a {
+        color: white !important;
+      }
+
+      footer {
+        text-align: center;
+        padding: 50px;
+        width: 100%;
+        background-color: #333;
+        color: white;
+      }
+
+      .support-form {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        max-width: 700px;
+        margin: auto;
+        margin-top: 40px;
+      }
+    </style>
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+
+    <script>
+      // Khởi tạo Firebase
+      const firebaseConfig = {
+        apiKey: "AIzaSyChEl49-r3HUTq9Bff7DJt4jVyn1t1_AYQ",
+        authDomain: "egdgdfg-fa829.firebaseapp.com",
+        databaseURL: "https://egdgdfg-fa829-default-rtdb.firebaseio.com",
+        projectId: "egdgdfg-fa829",
+        storageBucket: "egdgdfg-fa829.appspot.com",
+        messagingSenderId: "782783477869",
+        appId: "1:782783477869:web:0a9957ff8034c870b5a764",
+        measurementId: "G-Y8DK2TV2QF"
+      };
+
+      firebase.initializeApp(firebaseConfig);
+      const database = firebase.database();
+
+      // Xử lý submit form
+      document.getElementById("supportForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const fullName = document.getElementById("fullName").value;
+        const email = document.getElementById("emailAddress").value;
+        const phone = document.getElementById("phoneNumber").value;
+        const message = document.getElementById("message").value;
+
+        const supportRequest = {
+          fullName,
+          email,
+          phone,
+          message,
+          timestamp: new Date().toISOString()
+        };
+
+        database.ref("supportRequests").push(supportRequest)
+          .then(() => {
+            alert("Yêu cầu hỗ trợ đã được gửi!");
+            document.getElementById("supportForm").reset();
+          })
+          .catch((error) => {
+            alert("Đã xảy ra lỗi: " + error.message);
+          });
+      });
+    </script>
+  </body>
+</html>

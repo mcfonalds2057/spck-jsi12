@@ -1,0 +1,11 @@
+EN: 
+register: username, email, pasword, checkpassword (up data to localstorage)
+login: username, password (check data from localstorage)
+admin (add, edit, delete user and products (name, details, price, product image))
+
+VN: yêu cầu sp cuối khóa
+-phần sign up cần đủ họ tên, tên đăng nhập, mk, ảnh đại diẹn
+-login cần tên đăng nhập và mk
+-làm admin dashboard có thêm sửa xóa và view user và sản phẩm
+-phần sp thì có thẻ sửa tên, chi tiết, giá, loại sp và img
+-user thì các miền đã nói của user trừ mk

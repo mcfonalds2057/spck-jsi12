@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/f2a0c15a9d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <img width="150px" height="70px" src="la grasa brand V2.png" alt="lapnest logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Trang Chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">Về Chúng Tôi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Đăng Xuất</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admindashboard.html">Trang chủ Admin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="support.html">Hỗ trợ</a>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img width="100%" height="700px" src="https://www.apple.com/v/macbook-pro-14-and-16/e/images/overview/hero/hero_intro_endframe__e6khcva4hkeq_large.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img width="100%" height="700px" src="https://www.lowyat.net/wp-content/uploads/2021/08/hp-victus-16-malaysia-02.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img width="100%" height="700px" src="https://storage-asset.msi.com/global/picture/image/feature/nb/GF/Thin-GF63-12HW/images/GPU-bg.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img width="100%" height="700px" src="https://laptopmedia.com/wp-content/uploads/2021/05/aceraspire7a715-42gfeatured.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img width="100%" height="700px" src="https://i.gadgets360cdn.com/large/lenovo_legion_pro_7i_lenovo_1685620223799.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img width="100%" height="700px" src="https://www.html.it/app/uploads/2025/01/asus-zenbook-14-ryzen-5-e-windows-11-notebook-da-acquistare-adesso.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+<br>
+<p></p>
+
+<h3>Các sản phẩm Laptop</h3>
+
+
+
+
+<div class="container mt-5">
+  <div  id="product-list" class="row row-cols-1 row-cols-md-3 g-4">
+
+  </div>
+</div>
+
+  
+
+<div class="container mt-5">
+  <div id="productList" class="row row-cols-1 row-cols-md-3 g-4"></div>
+</div>
+
+
+   <br>
+   <p></p>
+
+   <footer>
+    <p>&copy; 2025 LapNest. All rights reserved.</p>
+    <p><a href="mailto:contact@lamcamcomputer.com">contact@lapnest.com</a></p>
+</footer>
+    
+  
+
+    <style>
+
+.navbar {
+  background-color: #333 !important; 
+}
+
+.navbar a {
+  color: white !important;
+}
+       
+       body {
+      background-color: #f8f9fa;
+      color: #333;
+      text-align: center;
+      font-family: Nunito;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s;
+      border: none;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      object-fit: cover;
+      height: 250px;
+    }
+
+    .card-title {
+      font-weight: 600;
+    }
+
+    
+    footer {
+        text-align: center;
+        padding: 50px;
+        width: 100%;
+        background-color: #333;
+        color: white;
+      }
+
+   
+
+    .btn-primary {
+      background-color: #4ca1af;
+      border: none;
+      transition: background-color 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .content, .content2 {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    </style>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+
+<script>
+  // Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyChEl49-r3HUTq9Bff7DJt4jVyn1t1_AYQ",
+    authDomain: "egdgdfg-fa829.firebaseapp.com",
+    databaseURL: "https://egdgdfg-fa829-default-rtdb.firebaseio.com",
+    projectId: "egdgdfg-fa829",
+    storageBucket: "egdgdfg-fa829.firebasestorage.app",
+    messagingSenderId: "782783477869",
+    appId: "1:782783477869:web:0a9957ff8034c870b5a764",
+    measurementId: "G-Y8DK2TV2QF",
+  };
+
+  // Initialize Firebase
+  const app = firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  const db = firebase.database();
+</script>
+
+<script>
+  const productList = document.getElementById('product-list');
+
+  // Gọi dữ liệu từ Firebase Realtime Database
+  firebase.database().ref('products').once('value')
+    .then(snapshot => {
+      snapshot.forEach(childSnapshot => {
+        const product = childSnapshot.val();
+
+        // Tạo card Bootstrap cho mỗi sản phẩm
+        const productCard = `
+              <div class="col">
+      <div class="card">
+        <img src="${product.productUrl}" class="card-img-top" alt="product image">
+        <div class="card-body">
+          <h5 class="card-title">${product.productName}</h5>
+          <p class="card-text">${product.detail}</p>
+          <a href="detail.html?id=${childSnapshot.key}" class="btn btn-primary">${product.price}</a>
+
+        </div>
+      </div>
+    </div>
+        `;
+
+        productList.innerHTML += productCard;
+      });
+    })
+    .catch(error => {
+      console.error(error);
+    });
+</script>
+
+</div>
+</body>
+</html>
