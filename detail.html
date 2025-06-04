@@ -151,10 +151,10 @@
           // Xử lý nút "Thêm vào giỏ hàng"
           document.getElementById('addToCartBtn').addEventListener('click', () => {
             const user = auth.currentUser;
-            if (!user) {
-              alert("Bạn cần đăng nhập để thêm vào giỏ hàng.");
-              return;
-            }
+            // if (!user) {
+            //   alert("Bạn cần đăng nhập để thêm vào giỏ hàng.");
+            //   return;
+            // }
 
             const cartRef = db.ref('cart/' + user.uid + '/' + productId);
 
