@@ -27,6 +27,9 @@
           src="la grasa brand V2.png"
           alt="lapnest logo"
         />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -185,7 +188,7 @@
 
               ref.once("value").then((snap) => {
                 let qty = snap.val().quantity;
-                if (action === "increase") {
+                if (action === "increase") {  
                   qty++;
                 } else if (action === "decrease" && qty > 1) {
                   qty--;
